@@ -1,0 +1,12 @@
+<div class="face-snap-card">
+	<h2> {{ title }} </h2>
+	<p> Mise en ligne le {{ createdDate }} </p>
+	<img [src]="imageUrl" [alt]="title">
+	<p> {{ description }} </p>
+	<p>
+		<button (click)="onSnap()" >{{ btnText }}</button>
+		<b>
+			{{snaps}}
+		</b>
+	</p>
+</div>
