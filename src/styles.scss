@@ -1,1 +1,18 @@
-/* You can add global styles to this file, and also import other style files */
+button{
+	border: none;
+	background-color: whitesmoke;
+	padding: 0.8em 1.4em;
+	box-shadow: 0 0 4px rgb(69, 68, 68);
+	border-radius: 0.2em;
+	cursor: pointer;
+}
+.ligne{
+	display: inline-block;
+	float: right;
+	button{
+		margin: 0 4px;
+	}
+}
+.date{
+	display: inline-block;
+}

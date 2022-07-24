@@ -1,8 +1,11 @@
-<div (click)="onView()" class="face-snap-card" [ngClass]="{snapped: faceSnap.snaps >= 1}">
+<div class="face-snap-card" [ngClass]="{snapped: faceSnap.snaps >= 1}">
 	<h2>{{ faceSnap.title | titlecase }}</h2>
 	<p class="date">Mis en ligne le {{ faceSnap.createdDate | date: 'd MMMM yyyy à HH:mm' }}</p>
+	<p class="ligne">
+		<button routerLink="/facesnaps">Retour</button>
+	</p>
 	<img [src]="faceSnap.imageUrl" [alt]="faceSnap.title">
-	<p >{{ faceSnap.description }}</p>
+	<p>{{ faceSnap.description }}</p>
 	<p *ngIf="faceSnap.location" >Photo prise à {{faceSnap.location}}</p>
 	<p>
 	  <button (click)="onSnap()">{{ btnText }}</button>
